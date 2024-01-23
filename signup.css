@@ -1,0 +1,55 @@
+body {
+  color: white;
+  background-color: #e3e2e2;
+}
+.parent {
+  position: relative;
+  display: grid;
+  justify-content: center;
+}
+.child {
+  position: absolute;
+  margin-top: 2%;
+  margin-left: 25%;
+  border-radius: 20px;
+  background-color: white;
+  border: 1px solid white;
+  width: 600px;
+  height: 670px;
+  display: grid;
+  justify-content: left;
+  padding-left: 40px;
+  line-height: 50px;
+  animation-name: slideinleft;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-delay: 0s;
+  animation-direction: normal;
+  animation-timing-function: ease-in;
+  vertical-align: middle;
+  color: black;
+  transition: ease;
+}
+
+@keyframes slideinleft {
+  from {
+    transform: translate(-700px);
+  }
+  to {
+    transform: translate(0px);
+  }
+}
+.box {
+  width: 500px;
+
+  margin-left: 20px;
+  height: 30px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+span {
+  font-weight: bold;
+}
+input:focus {
+  background-color: rgb(231, 237, 240);
+}
