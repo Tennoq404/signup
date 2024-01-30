@@ -9,7 +9,7 @@
   <body>
     <div class="parent">
       <div class="child">
-        <form action="">
+        <form id="form" action="">
           <h1>SIGN UP</h1>
           <div>
             <span>FirstName</span>
@@ -18,7 +18,7 @@
               placeholder="FirstName"
               maxlength="50"
               name="name"
-              class="box"
+              class="box box1"
             />
             <p id="p1"></p>
           </div>
@@ -29,14 +29,22 @@
               placeholder="LastName"
               maxlength="50"
               name="name"
-              class="box"
+              class="box box2"
             />
+            <p id="p2"></p>
           </div>
           <div>
             <span>Your email</span>
-            <input required placeholder=" Enter your Email " />
-            class="box" name="name" maxlength="50" onkeypress="if
-            (this.value.contain != gmail.com) { return false }" />
+            <input
+              required
+              placeholder="Enter your Email"
+              class="box box3"
+              name="name"
+              maxlength="50"
+              onkeypress="if
+            (this.value.contain != gmail.com) { return false }"
+            />
+            <p id="p3"></p>
           </div>
           <div>
             <span>Phone No</span>
@@ -44,19 +52,21 @@
               required
               placeholder="Enter your Phone Number"
               maxlength="999999999999999"
-              class="box"
+              class="box box4"
               name="number"
             />
+            <p id="p4"></p>
           </div>
           <div>
             <span>Matric No</span>
             <input
               required
               placeholder="Enter your Matric Number"
-              class="box"
+              class="box box5"
               name="name"
               maxlength="11"
             />
+            <p id="p1"></p>
           </div>
           <span>course </span>
           <select class="box">
